@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0px 20px;
+  padding: 10px;
+}
+
+#id {
+  background-color: rgb(246, 253, 253);
+  width: 100%;
+}
+
+.nav {
+  padding: 10px;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav .top1 {
+  padding: 10px;
+}
+.nav .top2 {
+  padding: 10px;
+}
+.nav .top2 i {
+  display: flex;
+  justify-content: end;
+  font-size: 17px;
+  display: none;
+}
+.nav .top2 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  gap: 30px;
+}
+.nav .top2 ul .box {
+  color: rgb(137, 187, 243);
+}
+.nav .top2 ul li {
+  font-size: 18px;
+}
+.nav .top2 ul li:hover {
+  color: rgb(137, 187, 243);
+  cursor: pointer;
+}
+
+#map {
+  background-color: rgb(237, 243, 243);
+  background-image: url("./server-banner.jpg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  width: 100%;
+}
+.content .class1 {
+  padding: 20px;
+  width: 400px;
+  background-color: red;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.content .class1::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 22px 14px 0 14px;
+  border-color: #fc6428 transparent transparent transparent;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+}
+.content .class1 p {
+  font-size: 30px;
+}
+.content .class2 {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .class2 .map1 {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 10px;
+}
+.content .class2 .map1 .icon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 400px;
+}
+.content .class2 .map1 .icon i {
+  margin-right: 10px;
+}
+.content .class2 .map1 h1 {
+  font-size: 45px;
+  color: white;
+}
+.content .class2 .map1 p {
+  font-size: 20px;
+  color: white;
+}
+.content .class2 .map1 .boxen {
+  font-size: 30px;
+  color: white;
+}
+.content .class2 .map2 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 789px) {
+  #id .container .nav .top2 ul {
+    display: none;
+  }
+  #id .container .nav .top2 i {
+    display: block;
+  }
+}/*# sourceMappingURL=main.css.map */
